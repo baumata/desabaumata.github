@@ -1,0 +1,7 @@
+Mail function failed! Please check the mail server configuration.
+Nama: s
+Email: celineboelan@gmail.com
+Subjek: protes
+
+Pesan:
+s

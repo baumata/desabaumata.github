@@ -1,0 +1,488 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #add6b6;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Tampilan Login */
+.login-wrapper, .register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container, .register-container {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid #007bff; /* Garis tepi di semua sisi */
+}
+
+
+.login-container h2, .register-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input, .register-container input {
+    width: 100%;
+    padding: 9px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.login-container button, .register-container button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold; /* Membuat teks lebih tebal */
+    font-size: 18px; /* Memperbesar teks */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk tampilan 3D */
+}
+
+.login-container button:hover, .register-container button:hover {
+    background: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Menambah efek bayangan saat hover */
+    transform: translateY(-2px); /* Efek mengangkat sedikit saat hover */
+}
+
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    padding-top: 20px;
+}
+#sidebar .sidebar-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#sidebar .sidebar-header p {
+    font-size: 14px;
+    color: #ddd;
+}
+#sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+#sidebar ul li {
+    padding: 12px;
+}
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+#sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: hsl(264, 34%, 36%);
+    color: black;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar h3 {
+    margin: 0;
+    font-size: 22px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Kontainer Utama */
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Alert */
+.alert {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Card Dashboard */
+.dashboard-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.card {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+.card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.card-primary { background-color: #6f42c1; }
+.card-info { background-color: #17a2b8; }
+.card-success { background-color: #28a745; }
+.card-warning { background-color: #ffc107; color: black; }
+
+/* Card Informasi */
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+.card-body ul li {
+    padding: 5px 0;
+}
+.card-body ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+.card-body ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ======================== */
+/*      STYLE PENDUDUK      */
+/* ======================== */
+.penduduk-container {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.penduduk-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.penduduk-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.penduduk-table th, .penduduk-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.penduduk-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.penduduk-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-action {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: black;
+}
+
+.btn-edit:hover {
+    background: #e0a800;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+/* Animasi untuk tombol Selengkapnya */
+.btn-light {
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+
+//* Efek 3D pada tombol "Selengkapnya" */
+.btn-selengkapnya {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff !important;
+    background: linear-gradient(145deg, #004080, #007bff) !important;
+    border: none !important;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out !important;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 
+                -4px -4px 8px rgba(255, 255, 255, 0.1) !important;
+}
+
+.btn-selengkapnya:hover {
+    background: linear-gradient(145deg, #003366, #0056b3) !important;
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), 
+                -6px -6px 12px rgba(255, 255, 255, 0.15) !important;
+}
+
+.btn-selengkapnya:active {
+    transform: scale(0.95);
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.4), 
+                inset -3px -3px 6px rgba(255, 255, 255, 0.15) !important;
+}
+
+
+/*      EDIT PENDUDUK       */
+/* ======================== */
+.edit-penduduk-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.edit-penduduk-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Tombol Aksi */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+}
+
+.btn-cancel {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #5a6268;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .dashboard-row {
+        flex-direction: column;
+    }
+
+    .penduduk-table th, .penduduk-table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+/* Styling khusus buat_surat.php */
+.buat-surat-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.buat-surat-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buat-surat-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buat-surat-form .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.buat-surat-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buat-surat-form textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Button Styling khusus */
+.buat-surat-form button, .buat-surat-form .btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buat-surat-form .btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.buat-surat-form .btn-primary:hover {
+    background: #0056b3;
+}
+
+.buat-surat-form .btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.buat-surat-form .btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buat-surat-container {
+        width: 90%;
+    }
+}
